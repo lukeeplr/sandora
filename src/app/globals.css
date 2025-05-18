@@ -9,6 +9,9 @@
   --color-medium-gray: var(--medium-gray);
   --color-light-gray: var(--light-gray);
   --color-white: var(--white);
+  --color-dark-neutral: var(--dark-neutral);
+  --color-medium-neutral: var(--medium-neutral);
+  --color-light-neutral: var(--light-neutral);
 
   --color-background: var(--background);
   --color-foreground: var(--foreground);
@@ -57,6 +60,9 @@
   --medium-gray: oklch(71.07% 0.035 256.79);
   --light-gray: oklch(86.90% 0.020 252.89);
   --white: oklch(99.27% 0.004 301.43);
+  --light-neutral: oklch(43.86% 0.000 0);
+  --medium-neutral: oklch(34.07% 0.000 0);
+  --dark-neutral: oklch(32.60% 0.001 17.23);
 
   --radius: 0.625rem;
   --background: oklch(1 0 0);
@@ -99,5 +105,18 @@
   }
   body {
     @apply bg-white text-foreground;
+  }
+
+  /* form classes */
+  .input-label {
+    @apply !font-medium !text-sm
+  }
+
+  .text-input {
+    @apply !bg-background !border-light-gray !placeholder-medium-gray !text-dark-gray !font-medium !text-xs sm:!text-sm !px-3 !py-5
+  }
+
+  .password-input {
+    @apply !bg-background !border-light-gray !placeholder-medium-gray !text-dark-gray !font-medium !text-xs sm:!text-sm !pl-3 !pr-10 !py-5
   }
 }
