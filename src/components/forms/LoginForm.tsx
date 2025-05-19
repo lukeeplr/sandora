@@ -13,6 +13,7 @@ import Link from 'next/link'
 
 import Logo from '../shared/Logo'
 import PasswordInput from '../shared/PasswordInput'
+import { toast } from 'sonner'
 
 
 const formSchema = z.object({
@@ -31,7 +32,7 @@ function LoginForm() {
   })
 
   function onSubmit(values: z.infer<typeof formSchema>) {
-    console.log(values)
+    toast('Enviado')
   }
 
   return (

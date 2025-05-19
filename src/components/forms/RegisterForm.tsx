@@ -12,6 +12,7 @@ import { Input } from '../ui/input'
 import PasswordInput from '../shared/PasswordInput'
 import { Button } from '../ui/button'
 import Link from 'next/link'
+import { toast } from 'sonner'
 
 
 const formSchema = z.object({
@@ -40,7 +41,7 @@ function RegisterForm() {
   })
 
   function onSubmit(values: z.infer<typeof formSchema>) {
-    console.log(values)
+    toast('Enviado')
   }
 
   return (

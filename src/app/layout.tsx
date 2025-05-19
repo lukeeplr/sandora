@@ -3,6 +3,7 @@ import "./globals.css";
 
 import { Montserrat } from 'next/font/google'
 import NavBar from "@/components/shared/NavBar";
+import { Toaster } from "sonner";
 const monstserrat = Montserrat({
   subsets: ['latin'],
   style: ['normal'],
@@ -29,6 +30,7 @@ export default function RootLayout({
           <main className="w-full min-h-screen grid grid-cols-1 lg:grid-cols-2">
             {children}
           </main>
+          <Toaster />
       </body>
     </html>
   );
