@@ -135,7 +135,7 @@ function RegisterForm() {
                 className='bg-brand hover:bg-brand/90 cursor-pointer w-full uppercase font-medium text-sm sm:text-lg text-background py-6 transition-all'>
                 Criar conta
             </Button>
-            <Link href={'/login'} className='underline font-medium text-[12px] sm:text-sm text-medium-gray mx-auto'>
+            <Link href={'/'} className='underline font-medium text-[12px] sm:text-sm text-medium-gray mx-auto'>
                 Já tem uma conta? Entrar
             </Link>
         </CardFooter>

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 import { Montserrat } from 'next/font/google'
+import NavBar from "@/components/shared/NavBar";
 const monstserrat = Montserrat({
   subsets: ['latin'],
   style: ['normal'],
@@ -24,7 +25,10 @@ export default function RootLayout({
       <body
         className={`${monstserrat.className} antialiased`}
       >
-        {children}
+        <NavBar />
+          <main className="w-full min-h-screen grid grid-cols-1 lg:grid-cols-2">
+            {children}
+          </main>
       </body>
     </html>
   );
